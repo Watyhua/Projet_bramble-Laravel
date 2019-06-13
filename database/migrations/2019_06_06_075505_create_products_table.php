@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
         $table->integer('user_id');
         $table->string('name');
         $table->integer('price');
+        $table->mediumText('image')->nullable();
         $table->timestamps();
  
         $table->foreign('user_id')
